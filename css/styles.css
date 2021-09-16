@@ -3498,13 +3498,14 @@ textarea.form-control-lg {
 }
 
 .btn-white {
+  transition: box-shadow .3s;
   color: #000;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
 }
 .btn-white:hover {
   color: #000;
-  background-color: white;
+  box-shadow: 0 0 11px rgba(250,204,50,.2); 
   border-color: white;
 }
 .btn-check:focus + .btn-white, .btn-white:focus {

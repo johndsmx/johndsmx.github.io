@@ -14,6 +14,7 @@
  @import url('http://fonts.cdnfonts.com/css/airbnb-cereal-app');
  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
+
 :root {
   --bs-blue: #ffca2b;
   --bs-indigo: #5800e8;
@@ -37,7 +38,7 @@
   --bs-gray-700: #4a515b;
   --bs-gray-800: #363d47;
   --bs-gray-900: #212832;
-  --bs-primary: #ffca2b;
+  --bs-primary: #FFCC32;
   --bs-secondary: #6900c7;
   --bs-success: #00ac69;
   --bs-info: #00cfd5;
@@ -147,6 +148,33 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
+
+/* Custom CSS */
+
+/* Text */
+.text-yellow{
+  color:#FFCC32;
+}
+
+.text-darker{
+  color: #08172B;
+}
+
+.text-darkblue{
+  color:#092540;
+}
+
+
+/* Background */
+bg-yellow
+
+
+
+/* End of Custom CSS  */
+
+
 
 hr {
   margin: 1rem 0;
@@ -3166,9 +3194,10 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-family: 'Airbnb Cereal App', sans-serif;                                              
+  font-weight: 900;
   line-height: 1;
-  color: #69707a;
+  color: #2a2a2a;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -3180,7 +3209,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   padding: 0.875rem 1.125rem;
   font-size: 0.875rem;
-  border-radius: 0.35rem;
+  border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3189,7 +3218,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #69707a;
+  color: #2a2a2a;
   text-decoration: none;
 }
 .btn-check:focus + .btn, .btn:focus {
@@ -3202,14 +3231,13 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0061f2;
-  border-color: #0061f2;
+  transition: box-shadow .3s;
+  color: #2A2A2A;
+  background-color:#FFCC32;
+  border-color: #FFCC32;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0052ce;
-  border-color: #004ec2;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -10978,7 +11006,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #08172B!important; 
 }
 
 .bg-black {
@@ -11003,7 +11031,7 @@ textarea.form-control-lg {
 
 .bg-yellow {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-yellow-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #FFCC32!important;
 }
 
 .bg-green {
@@ -11023,7 +11051,7 @@ textarea.form-control-lg {
 
 .bg-blue {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-blue-rgb), var(--bs-bg-opacity)) !important;
+  background-color:#092540 !important;
 }
 
 .bg-indigo {

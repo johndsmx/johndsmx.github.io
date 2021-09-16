@@ -154,9 +154,7 @@ body {
 /* Custom CSS */
 
 /* Text */
-.text-yellow{
-  color:#FFCC32;
-}
+
 
 .text-darker{
   color: #08172B;
@@ -10810,7 +10808,7 @@ textarea.form-control-lg {
 
 .text-yellow {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-yellow-rgb), var(--bs-text-opacity)) !important;
+  color:#FFCC32!important;
 }
 
 .text-green {

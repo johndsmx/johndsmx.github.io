@@ -20314,3 +20314,9 @@ section {
     border-right: 0.0625rem solid #e0e5ec;
   }
 }
+
+.page-header-ui {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}

@@ -3193,7 +3193,7 @@ textarea.form-control-lg {
 .btn {
   display: inline-block;
   font-family: 'Airbnb Cereal App', sans-serif;                                              
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1;
   color: #2a2a2a;
   text-align: center;
@@ -3206,7 +3206,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 1.1em 4em;
-  font-size: 1em;
+  font-size: 1.1em;
   border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -3240,32 +3240,44 @@ textarea.form-control-lg {
 
 
 .btn-download {
-  transition: all 0.2s linear 0s;
-  
-  &:before {
-    content: "\f178";
-    font-family: FontAwesome;
-    font-size: 15px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    height: 100%;
-    width: 40px;
-    transition: all 0.2s linear 0s;
-  }
-  
-  &:hover {
-    text-indent: -20px;
-    
-    &:before {
-      opacity: 1;
-      text-indent: 0px;
-    }
-  }
+  border-radius: 4px;
+  color: #2A2A2A;
+  background-color:#FFCC32;
+  border-color: #FFCC32;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.5);
+  padding: 16px;
+  width: 220px;
+  height: 53px;
+}
+
+
+.btn-download{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-download:after {
+  content: "\e90f";
+  font-family: icomoon;
+  position: absolute;
+  opacity: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.btn-download:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  color: #2A2A2A;
+  background-color:#f4f4f4;
+}
+
+.btn-download:hover:after {
+  opacity: 1;
+  right: 40px;
 }
 
 

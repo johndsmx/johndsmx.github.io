@@ -166,7 +166,10 @@ body {
 
 
 /* Background */
-bg-yellow
+.bg-ig{
+  background-image: url(../assets/img/ig_bg.jpg);
+  background-position: center;
+}
 
 
 
@@ -3238,6 +3241,9 @@ textarea.form-control-lg {
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
+.herocurve{
+  clip-path: ellipse(120% 100% at 50% 0%);
+}
 
 .btn-download {
   border-radius: 4px;

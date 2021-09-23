@@ -246,6 +246,34 @@ input[type=number],
   transition: 0.5s;
 }
 
+
+.embed-form-super-wrapper .hs-form input[type=reset],
+.embed-form-super-wrapper .hs-form input[type=submit]:after {
+    content: "\e90f";
+    font-family: icomoon;
+    position: absolute;
+    opacity: 0;
+    right: 20px;
+    transition: 0.5s;
+  }
+
+
+.embed-form-super-wrapper .hs-form input[type=reset],
+.embed-form-super-wrapper .hs-form input[type=submit]:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    color: #2A2A2A;
+    background-color:#f4f4f4;
+  }
+
+.embed-form-super-wrapper .hs-form input[type=reset],
+.embed-form-super-wrapper .hs-form input[type=submit]:hover:after {
+    opacity: 1;
+    right: 40px;
+  }
+
+
+
 .embed-form-super-wrapper .hs-form .hs-submit {
     display: inline-block;
     width: 100%;
